@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Project</title>
+</head>
+
+<body>
+    <h2>Add</h2>
+    <input type="text" id="number1" placeholder="Enter first Number">
+    <input type="text" id="number2" placeholder="Enter second Number">
+    <input type="submit" value="Submit" id="submit">
+    <h3 id="result"></h3>
+
+
+    <script>
+        const number1 = document.getElementById("number1")
+        const number2 = document.getElementById("number2");
+        const submit = document.getElementById("submit");
+        const result = document.getElementById("result");
+        submit.addEventListener("click", (e) => {
+            e.preventDefault();
+            let val1 = parseInt(number1.value);
+            let val2 = parseInt(number2.value);
+            const output = val1 + val2;
+
+            result.innerHTML = `Output = ${output}`;
+
+            document.getElementById("number1").value = " ";
+            document.getElementById("number2").value = " ";
+            val2 = " ";
+        })
+    </script>
+</body>
+
+</html>
