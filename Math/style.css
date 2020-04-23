@@ -1,0 +1,48 @@
+.wrap {
+    width: 50%;
+    margin: 0 auto;
+    background: #ddd;
+    padding: 50px;
+    border-radius: 5px;
+    min-height: 450px;
+}
+
+.wrap h2 {
+    text-align: center;
+}
+
+.left {
+    width: 50%;
+    float: left;
+    border-right: 1px solid #ccc;
+    margin-right: 30px;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.fix:before,
+.fix:after {
+    content: "";
+    display: table;
+}
+
+.fix:after {
+    clear: both;
+}
+
+button {
+    background: darkgoldenrod;
+    border: 1px solid darkgoldenrod;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.left,
+.right {
+    min-height: 300px;
+}
